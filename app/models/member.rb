@@ -8,4 +8,6 @@ class Member < ActiveRecord::Base
   validates_attachment_file_name :avatar,
     :matches => [/png\Z/, /jp?g\Z/]
 
+  has_one :member_info, autosave: true
+
 end
