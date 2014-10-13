@@ -42,6 +42,12 @@ group :test do
   gem 'database_cleaner'
 end
 
+group :development do
+  gem 'pry-rails'
+end
+
+gem 'paperclip'
+
 group :development, :test do
   gem 'rspec-rails'
 end
